@@ -6,14 +6,13 @@ axios
     .then((response) => {
 
         // Firstly, log response to the console,
-        //console.log(response);
+        console.log(response);
         // inspect the response and see that it has data field
 
         // Assign data field of the response to
         // products variable below by destructuring
         // You can use alias
         const product = { id, name, description, image } = response.data;
-       // console.table(product);
         // Print names of all product to the console
         // by calling foreach  method (use arrow function)
           product.forEach((item) => console.log(item.name))
@@ -21,7 +20,7 @@ axios
 
         // Get all products that contain "Şal" in their name (use filter method)
         var filteredProduct = product.filter((s) => s.description.indexOf('Şal') !== -1);
-        console.log(filteredProduct);
+        //console.log(filteredProduct);
         // map filtered products to new object having only image and name field
         // assign mapped items to mappedProducts variable
         const mappedProducts = filteredProduct.map((ss) =>
@@ -30,7 +29,7 @@ axios
             name: ss.name,
             image: ss.image
         }));
-        console.table(mappedProducts)
+        //console.table(mappedProducts)
         let app = document.getElementById('app');
         // Display the images and names of mappedProducts
         // You need to add them to the DOM
