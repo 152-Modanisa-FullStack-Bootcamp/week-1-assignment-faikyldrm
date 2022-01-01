@@ -1,4 +1,13 @@
-h1 {
-  color: hotpink;
-  font-family: cursive;
+.divItem{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.ImgItem{
+    display:block;
+    height:600px;
+    width:400px;
+}
+#app {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
 }
