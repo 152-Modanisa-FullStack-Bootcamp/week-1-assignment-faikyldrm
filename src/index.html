@@ -1,12 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <title>My First Parcel App</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
+</head>
+
+<body class="login-body">
+
+    <section>
+        <div class="container">
+            <div class="login-box">
+                <div class="login-container">
+                    <div class="form-header-content">
+                        <div class="row">
+                            <h1>Login</h1>
+                        </div>
+
+                    </div>
+                    <form method="post" class="login__form" action="">
+                        <div class="col">
+                            <label>Username</label>
+                            <input type="text" placeholder="Username" />
+                        </div>
+                        <div class="col">
+                            <label>Password</label>
+                            <input type="password" placeholder="Password" />
+                        </div>
+                        <div class="col">
+                            <a class="forgot-password" href="#">Forgot Password?</a>
+                        </div>
+                        <div class="col">
+                            <button class="login-btn">Login</button>
+                        </div>
+                    </form>
+                    <div class="join-now-box">
+                        Not a member? <a href="#">Signup</a>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+
 </html>
